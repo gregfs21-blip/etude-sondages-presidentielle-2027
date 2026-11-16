@@ -1,0 +1,7 @@
+{
+  "installCommand": "echo \"Aucune dépendance nécessaire : dist/ est pré-généré\"",
+  "buildCommand": "node scripts/check-dist.mjs",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false
+}

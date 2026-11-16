@@ -1,0 +1,17 @@
+{
+  "name": "presidentielle-2027-suivi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Suivi des sondages présidentielle 2027 : Postgres + filtre de Kalman, généré en site statique.",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "generate": "node scripts/generate.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.11.0"
+  }
+}
