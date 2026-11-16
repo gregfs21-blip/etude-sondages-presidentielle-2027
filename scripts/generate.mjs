@@ -204,7 +204,7 @@ function renderPage({ asOf, series, journal, sourceUrls, minN, maxN }) {
       </tr>`;
   }).join('');
 
-  // La somme des 6 blocs ne fait PAS 100 % — voir Lecture critique #5. On
+  // La somme des blocs ne fait PAS 100 % — voir Lecture critique #5. On
   // l'affiche explicitement pour que ça ne passe pas pour un oubli ou une
   // erreur de calcul : c'est une conséquence directe de la façon dont le
   // modèle fonctionne (blocs indépendants, sondages non exhaustifs,
@@ -212,7 +212,7 @@ function renderPage({ asOf, series, journal, sourceUrls, minN, maxN }) {
   const sumProjections = series.reduce((acc, s) => acc + s.projection.mean, 0);
 
   const journalRows = journal.map((j) => {
-    const cells = ['rn', 'centre', 'lfi', 'gauche', 'droite', 'autres']
+    const cells = series.map((s) => s.bloc.id)
       .map((bid) => `<td class="fig">${j.perBloc[bid] ?? '—'}</td>`)
       .join('');
     return `
@@ -276,13 +276,13 @@ function renderPage({ asOf, series, journal, sourceUrls, minN, maxN }) {
         <tbody>${estimateRows}</tbody>
       </table>
     </div>
-    <div class="sum-note">Somme des 6 blocs aujourd'hui : <strong>${fmtPct1(sumProjections)} %</strong> — ce n'est pas 100 % et ce n'est pas une erreur de calcul, voir le point 5 de la lecture critique plus bas.</div>
+    <div class="sum-note">Somme des ${series.length} blocs aujourd'hui : <strong>${fmtPct1(sumProjections)} %</strong> — ce n'est pas 100 % et ce n'est pas une erreur de calcul, voir le point 5 de la lecture critique plus bas.</div>
   </section>
 
   <section id="synthese">
     <div class="section-label">Vue d'ensemble</div>
     <h2>Tous les blocs, une seule courbe par bloc</h2>
-    <div class="section-note">Même modèle que ci-dessous (Kalman + lisseur RTS), mais sans les bandes d'incertitude ni les sondages bruts pour rester lisible à six courbes superposées — juste la tendance de chaque bloc et sa position relative aux autres. Trait plein = estimation lissée. Pointillé = projection jusqu'à aujourd'hui, sans nouvelle mesure. Détail complet (bandes, points bruts, Q) dans les graphiques par bloc juste après.</div>
+    <div class="section-note">Même modèle que ci-dessous (Kalman + lisseur RTS), mais sans les bandes d'incertitude ni les sondages bruts pour rester lisible à ${series.length} courbes superposées — juste la tendance de chaque bloc et sa position relative aux autres. Trait plein = estimation lissée. Pointillé = projection jusqu'à aujourd'hui, sans nouvelle mesure. Détail complet (bandes, points bruts, Q) dans les graphiques par bloc juste après.</div>
     ${synthesisHtml}
   </section>
 
@@ -302,7 +302,7 @@ function renderPage({ asOf, series, journal, sourceUrls, minN, maxN }) {
     <div class="table-scroll">
       <table>
         <thead>
-          <tr><th>Date</th><th>Institut</th><th>RN</th><th>Centre</th><th>LFI</th><th>Gauche mod. / écolo</th><th>Droite classique</th><th>Autres</th></tr>
+          <tr><th>Date</th><th>Institut</th>${series.map((s) => `<th>${s.bloc.label}</th>`).join('')}</tr>
         </thead>
         <tbody>${journalRows}</tbody>
       </table>
@@ -326,7 +326,7 @@ function renderPage({ asOf, series, journal, sourceUrls, minN, maxN }) {
         <p><b>La bande de projection grandit mécaniquement avec le temps.</b> Si aucun sondage n'est ajouté pendant plusieurs mois, l'intervalle "aujourd'hui" continuera de s'élargir — c'est le modèle qui dit honnêtement qu'il ne sait plus, pas un bug.</p>
       </div>
       <div class="read-item"><div class="read-num">5</div>
-        <p><b>La somme des 6 blocs (${fmtPct1(sumProjections)} % actuellement) ne fait volontairement pas 100 %.</b> Chaque bloc est lissé par son propre filtre de Kalman, sans aucune contrainte qui forcerait le total à 100 % à un instant donné. Trois raisons structurelles à ça : les sondages ne testent pas tous les mêmes candidats, et un bloc dans un même sondage est déjà une moyenne de plusieurs hypothèses (pas un score unique) ; les blocs n'ont pas tous la même date de dernière mesure, donc "aujourd'hui" n'est pas comparé à la même base temporelle partout ; et aucune catégorie "indécis / sans opinion" n'est suivie ici, alors que les sondages à ce stade de la campagne en comptent typiquement 10 à 20 %. Renormaliser pour forcer un total à 100 % serait trompeur — ça ferait comme si ces 6 blocs couvraient tout l'électorat, ce que rien ne démontre. Mieux vaut afficher le vrai total, même imparfait.</p>
+        <p><b>La somme des ${series.length} blocs (${fmtPct1(sumProjections)} % actuellement) ne fait volontairement pas 100 %.</b> Chaque bloc est lissé par son propre filtre de Kalman, sans aucune contrainte qui forcerait le total à 100 % à un instant donné. Trois raisons structurelles à ça : les sondages ne testent pas tous les mêmes candidats, et un bloc dans un même sondage est déjà une moyenne de plusieurs hypothèses (pas un score unique) ; les blocs n'ont pas tous la même date de dernière mesure, donc "aujourd'hui" n'est pas comparé à la même base temporelle partout ; et aucune catégorie "indécis / sans opinion" n'est suivie ici, alors que les sondages à ce stade de la campagne en comptent typiquement 10 à 20 %. Renormaliser pour forcer un total à 100 % serait trompeur — ça ferait comme si ces ${series.length} blocs couvraient tout l'électorat, ce que rien ne démontre. Mieux vaut afficher le vrai total, même imparfait.</p>
       </div>
     </div>
   </section>

@@ -155,7 +155,7 @@
     <div class="meta-row">
       <span><b>Généré le :</b> 16 novembre 2026</span>
       <span><b>1er tour :</b> avril 2027</span>
-      <span><b>Sondages bruts par bloc :</b> 22 à 27</span>
+      <span><b>Sondages bruts par bloc :</b> 16 à 27</span>
     </div>
   </header>
 
@@ -214,28 +214,35 @@
         <td class="num fig">26</td>
       </tr>
       <tr>
-        <td><strong>Droite classique</strong><span class="fig-inline">Retailleau (LR)</span></td>
+        <td><strong>LR (Retailleau)</strong><span class="fig-inline">Retailleau (LR) seul ; Lisnard a son propre bloc</span></td>
         <td class="num">8,8 % <span class="fig-inline">(27 mai 2026)</span></td>
         <td class="num">5,7 % <span class="fig-inline">± 1,3</span></td>
         <td class="num delta down">↓ 3,0 pt</td>
         <td class="num fig">25</td>
       </tr>
       <tr>
+        <td><strong>Lisnard</strong><span class="fig-inline">David Lisnard, suivi à part depuis le 16 nov. 2026 (avant : dans « Autres »)</span></td>
+        <td class="num">4,0 % <span class="fig-inline">(31 août 2026)</span></td>
+        <td class="num">9,5 % <span class="fig-inline">± 2,7</span></td>
+        <td class="num delta up">↑ 5,5 pt</td>
+        <td class="num fig">16</td>
+      </tr>
+      <tr>
         <td><strong>Autres</strong><span class="fig-inline">Hollande, Zemmour, Dupont-Aignan, etc.</span></td>
         <td class="num">6,3 % <span class="fig-inline">(27 mai 2026)</span></td>
-        <td class="num">2,8 % <span class="fig-inline">± 1,9</span></td>
-        <td class="num delta down">↓ 3,5 pt</td>
+        <td class="num">2,1 % <span class="fig-inline">± 1,2</span></td>
+        <td class="num delta down">↓ 4,2 pt</td>
         <td class="num fig">22</td>
       </tr></tbody>
       </table>
     </div>
-    <div class="sum-note">Somme des 6 blocs aujourd'hui : <strong>83,2 %</strong> — ce n'est pas 100 % et ce n'est pas une erreur de calcul, voir le point 5 de la lecture critique plus bas.</div>
+    <div class="sum-note">Somme des 7 blocs aujourd'hui : <strong>92,0 %</strong> — ce n'est pas 100 % et ce n'est pas une erreur de calcul, voir le point 5 de la lecture critique plus bas.</div>
   </section>
 
   <section id="synthese">
     <div class="section-label">Vue d'ensemble</div>
     <h2>Tous les blocs, une seule courbe par bloc</h2>
-    <div class="section-note">Même modèle que ci-dessous (Kalman + lisseur RTS), mais sans les bandes d'incertitude ni les sondages bruts pour rester lisible à six courbes superposées — juste la tendance de chaque bloc et sa position relative aux autres. Trait plein = estimation lissée. Pointillé = projection jusqu'à aujourd'hui, sans nouvelle mesure. Détail complet (bandes, points bruts, Q) dans les graphiques par bloc juste après.</div>
+    <div class="section-note">Même modèle que ci-dessous (Kalman + lisseur RTS), mais sans les bandes d'incertitude ni les sondages bruts pour rester lisible à 7 courbes superposées — juste la tendance de chaque bloc et sa position relative aux autres. Trait plein = estimation lissée. Pointillé = projection jusqu'à aujourd'hui, sans nouvelle mesure. Détail complet (bandes, points bruts, Q) dans les graphiques par bloc juste après.</div>
     
   <div class="synthesis-card">
     <svg viewBox="0 0 940 380" role="img" aria-label="Vue de synthèse : toutes les courbes lissées par bloc, au 16 nov.">
@@ -275,10 +282,15 @@
       <line x1="673.4" y1="310.4" x2="688.0" y2="310.4" class="synth-line synth-line-proj" />
       <circle cx="688.0" cy="310.4" r="3.4" class="synth-dot" />
     </g>
+    <g class="synth-series" style="--light:#8c564b;--dark:#c49c94">
+      <polyline points="411.2,320.4 462.2,316.3 505.9,323.9 567.8,318.7 567.8,318.7 575.1,311.7 586.0,305.8 593.3,300.6 593.3,300.6 596.9,302.9 596.9,302.9 622.4,296.1 644.3,289.4 662.5,284.8 662.5,284.8 673.4,286.0" class="synth-line" />
+      <line x1="673.4" y1="286.0" x2="688.0" y2="286.0" class="synth-line synth-line-proj" />
+      <circle cx="688.0" cy="286.0" r="3.4" class="synth-dot" />
+    </g>
     <g class="synth-series" style="--light:#4a3aa7;--dark:#9085e9">
-      <polyline points="61.5,315.4 363.8,319.1 411.2,319.3 440.3,321.5 462.2,323.2 491.3,325.5 505.9,326.7 516.8,327.4 542.3,328.5 567.8,329.6 567.8,329.6 575.1,329.7 586.0,329.9 593.3,329.9 593.3,329.9 596.9,330.0 596.9,330.0 622.4,329.9 644.3,329.8 662.5,329.7 662.5,329.7 673.4,329.7" class="synth-line" />
-      <line x1="673.4" y1="329.7" x2="688.0" y2="329.7" class="synth-line synth-line-proj" />
-      <circle cx="688.0" cy="329.7" r="3.4" class="synth-dot" />
+      <polyline points="61.5,315.5 363.8,319.3 411.2,319.6 440.3,322.0 462.2,323.8 491.3,326.5 505.9,327.8 516.8,328.7 542.3,330.3 567.8,332.1 567.8,332.1 575.1,332.5 586.0,332.9 593.3,333.3 593.3,333.3 596.9,333.4 596.9,333.4 622.4,333.8 644.3,334.3 662.5,334.6 662.5,334.6 673.4,334.4" class="synth-line" />
+      <line x1="673.4" y1="334.4" x2="688.0" y2="334.4" class="synth-line synth-line-proj" />
+      <circle cx="688.0" cy="334.4" r="3.4" class="synth-dot" />
     </g>
       
     <g class="synth-series" style="--light:#eb6834;--dark:#d95926">
@@ -297,13 +309,17 @@
       <line x1="692.0" x2="700.0" y1="270.6" y2="284.2" class="synth-leader" />
       <text x="704.0" y="287.8" class="synth-label">Centre · 11,8 %</text>
     </g>
+    <g class="synth-series" style="--light:#8c564b;--dark:#c49c94">
+      <line x1="692.0" x2="700.0" y1="286.0" y2="299.2" class="synth-leader" />
+      <text x="704.0" y="302.8" class="synth-label">Lisnard · 9,5 %</text>
+    </g>
     <g class="synth-series" style="--light:#eda100;--dark:#c98500">
-      
-      <text x="704.0" y="314.0" class="synth-label">Droite classique · 5,7 %</text>
+      <line x1="692.0" x2="700.0" y1="310.4" y2="314.2" class="synth-leader" />
+      <text x="704.0" y="317.8" class="synth-label">LR (Retailleau) · 5,7 %</text>
     </g>
     <g class="synth-series" style="--light:#4a3aa7;--dark:#9085e9">
       
-      <text x="704.0" y="333.3" class="synth-label">Autres · 2,8 %</text>
+      <text x="704.0" y="338.0" class="synth-label">Autres · 2,1 %</text>
     </g>
       <text x="36" y="372" class="axis-label-lg" text-anchor="start">20 mai</text>
       <text x="688.0" y="372" class="axis-label-lg" text-anchor="end">16 nov. (proj.)</text>
@@ -380,11 +396,11 @@
     <line x1="275.4" x2="275.4" y1="60.4" y2="54.5" class="raw-range" />
     <circle cx="275.4" cy="57.4" r="3.4" class="raw-dot" />
   
-    <line x1="287.7" x2="287.7" y1="60.4" y2="60.4" class="raw-range" />
-    <circle cx="287.7" cy="60.4" r="3.4" class="raw-dot" />
-  
     <line x1="287.7" x2="287.7" y1="60.4" y2="54.5" class="raw-range" />
     <circle cx="287.7" cy="56.8" r="3.4" class="raw-dot" />
+  
+    <line x1="287.7" x2="287.7" y1="60.4" y2="60.4" class="raw-range" />
+    <circle cx="287.7" cy="60.4" r="3.4" class="raw-dot" />
   
     <line x1="291.3" x2="291.3" y1="72.2" y2="64.8" class="raw-range" />
     <circle cx="291.3" cy="68.0" r="3.4" class="raw-dot" />
@@ -398,11 +414,11 @@
     <line x1="300.1" x2="300.1" y1="66.3" y2="60.4" class="raw-range" />
     <circle cx="300.1" cy="62.8" r="3.4" class="raw-dot" />
   
-    <line x1="301.9" x2="301.9" y1="69.3" y2="64.8" class="raw-range" />
-    <circle cx="301.9" cy="65.9" r="3.4" class="raw-dot" />
-  
     <line x1="301.9" x2="301.9" y1="57.4" y2="57.4" class="raw-range" />
     <circle cx="301.9" cy="57.4" r="3.4" class="raw-dot" />
+  
+    <line x1="301.9" x2="301.9" y1="69.3" y2="64.8" class="raw-range" />
+    <circle cx="301.9" cy="65.9" r="3.4" class="raw-dot" />
   
     <line x1="314.2" x2="314.2" y1="60.4" y2="54.5" class="raw-range" />
     <circle cx="314.2" cy="57.4" r="3.4" class="raw-dot" />
@@ -505,17 +521,17 @@
     <line x1="296.6" x2="296.6" y1="104.8" y2="85.1" class="raw-range" />
     <circle cx="296.6" cy="98.0" r="3.4" class="raw-dot" />
   
-    <line x1="300.1" x2="300.1" y1="114.7" y2="85.1" class="raw-range" />
-    <circle cx="300.1" cy="99.9" r="3.4" class="raw-dot" />
-  
     <line x1="300.1" x2="300.1" y1="104.8" y2="80.1" class="raw-range" />
     <circle cx="300.1" cy="90.0" r="3.4" class="raw-dot" />
   
-    <line x1="301.9" x2="301.9" y1="117.1" y2="90.0" class="raw-range" />
-    <circle cx="301.9" cy="100.5" r="3.4" class="raw-dot" />
+    <line x1="300.1" x2="300.1" y1="114.7" y2="85.1" class="raw-range" />
+    <circle cx="300.1" cy="99.9" r="3.4" class="raw-dot" />
   
     <line x1="301.9" x2="301.9" y1="104.8" y2="104.8" class="raw-range" />
     <circle cx="301.9" cy="104.8" r="3.4" class="raw-dot" />
+  
+    <line x1="301.9" x2="301.9" y1="117.1" y2="90.0" class="raw-range" />
+    <circle cx="301.9" cy="100.5" r="3.4" class="raw-dot" />
   
     <line x1="314.2" x2="314.2" y1="119.6" y2="90.0" class="raw-range" />
     <circle cx="314.2" cy="104.2" r="3.4" class="raw-dot" />
@@ -523,11 +539,11 @@
     <line x1="324.8" x2="324.8" y1="119.6" y2="94.9" class="raw-range" />
     <circle cx="324.8" cy="108.7" r="3.4" class="raw-dot" />
   
-    <line x1="333.6" x2="333.6" y1="124.5" y2="94.9" class="raw-range" />
-    <circle cx="333.6" cy="106.6" r="3.4" class="raw-dot" />
-  
     <line x1="333.6" x2="333.6" y1="114.7" y2="104.8" class="raw-range" />
     <circle cx="333.6" cy="109.7" r="3.4" class="raw-dot" />
+  
+    <line x1="333.6" x2="333.6" y1="124.5" y2="94.9" class="raw-range" />
+    <circle cx="333.6" cy="106.6" r="3.4" class="raw-dot" />
   
     <line x1="338.9" x2="338.9" y1="122.1" y2="90.0" class="raw-range" />
     <circle cx="338.9" cy="108.1" r="3.4" class="raw-dot" />
@@ -603,11 +619,11 @@
     <line x1="275.4" x2="275.4" y1="57.4" y2="51.5" class="raw-range" />
     <circle cx="275.4" cy="56.3" r="3.4" class="raw-dot" />
   
-    <line x1="287.7" x2="287.7" y1="75.2" y2="75.2" class="raw-range" />
-    <circle cx="287.7" cy="75.2" r="3.4" class="raw-dot" />
-  
     <line x1="287.7" x2="287.7" y1="87.0" y2="69.3" class="raw-range" />
     <circle cx="287.7" cy="76.4" r="3.4" class="raw-dot" />
+  
+    <line x1="287.7" x2="287.7" y1="75.2" y2="75.2" class="raw-range" />
+    <circle cx="287.7" cy="75.2" r="3.4" class="raw-dot" />
   
     <line x1="291.3" x2="291.3" y1="75.2" y2="69.3" class="raw-range" />
     <circle cx="291.3" cy="72.2" r="3.4" class="raw-dot" />
@@ -615,11 +631,11 @@
     <line x1="296.6" x2="296.6" y1="75.2" y2="45.6" class="raw-range" />
     <circle cx="296.6" cy="66.0" r="3.4" class="raw-dot" />
   
-    <line x1="300.1" x2="300.1" y1="63.4" y2="51.5" class="raw-range" />
-    <circle cx="300.1" cy="61.0" r="3.4" class="raw-dot" />
-  
     <line x1="300.1" x2="300.1" y1="54.5" y2="48.6" class="raw-range" />
     <circle cx="300.1" cy="50.5" r="3.4" class="raw-dot" />
+  
+    <line x1="300.1" x2="300.1" y1="63.4" y2="51.5" class="raw-range" />
+    <circle cx="300.1" cy="61.0" r="3.4" class="raw-dot" />
   
     <line x1="301.9" x2="301.9" y1="63.4" y2="63.4" class="raw-range" />
     <circle cx="301.9" cy="63.4" r="3.4" class="raw-dot" />
@@ -731,17 +747,17 @@
     <line x1="296.6" x2="296.6" y1="75.2" y2="45.6" class="raw-range" />
     <circle cx="296.6" cy="62.0" r="3.4" class="raw-dot" />
   
-    <line x1="300.1" x2="300.1" y1="67.8" y2="60.4" class="raw-range" />
-    <circle cx="300.1" cy="64.1" r="3.4" class="raw-dot" />
-  
     <line x1="300.1" x2="300.1" y1="75.2" y2="60.4" class="raw-range" />
     <circle cx="300.1" cy="69.3" r="3.4" class="raw-dot" />
   
-    <line x1="301.9" x2="301.9" y1="67.8" y2="49.3" class="raw-range" />
-    <circle cx="301.9" cy="61.3" r="3.4" class="raw-dot" />
+    <line x1="300.1" x2="300.1" y1="67.8" y2="60.4" class="raw-range" />
+    <circle cx="300.1" cy="64.1" r="3.4" class="raw-dot" />
   
     <line x1="301.9" x2="301.9" y1="67.8" y2="67.8" class="raw-range" />
     <circle cx="301.9" cy="67.8" r="3.4" class="raw-dot" />
+  
+    <line x1="301.9" x2="301.9" y1="67.8" y2="49.3" class="raw-range" />
+    <circle cx="301.9" cy="61.3" r="3.4" class="raw-dot" />
   
     <line x1="314.2" x2="314.2" y1="90.0" y2="67.8" class="raw-range" />
     <circle cx="314.2" cy="79.8" r="3.4" class="raw-dot" />
@@ -771,10 +787,10 @@
 
   <figure class="bloc-chart" style="--light:#eda100;--dark:#c98500">
     <figcaption>
-      <strong>Droite classique</strong>
-      <span class="fig">Retailleau (LR)</span>
+      <strong>LR (Retailleau)</strong>
+      <span class="fig">Retailleau (LR) seul ; Lisnard a son propre bloc</span>
     </figcaption>
-    <svg viewBox="0 0 360 190" role="img" aria-label="Estimation lissée du bloc Droite classique, 5,7 pourcent au 16 nov.">
+    <svg viewBox="0 0 360 190" role="img" aria-label="Estimation lissée du bloc LR (Retailleau), 5,7 pourcent au 16 nov.">
       
     <line x1="30" x2="346" y1="164.0" y2="164.0" class="grid-line" />
     <text x="24" y="167.0" class="axis-label" text-anchor="end">0</text>
@@ -841,17 +857,17 @@
     <line x1="294.6" x2="294.6" y1="114.7" y2="90.0" class="raw-range" />
     <circle cx="294.6" cy="102.7" r="3.4" class="raw-dot" />
   
-    <line x1="298.2" x2="298.2" y1="124.5" y2="75.2" class="raw-range" />
-    <circle cx="298.2" cy="102.8" r="3.4" class="raw-dot" />
-  
     <line x1="298.2" x2="298.2" y1="94.9" y2="65.3" class="raw-range" />
     <circle cx="298.2" cy="81.8" r="3.4" class="raw-dot" />
   
-    <line x1="300.1" x2="300.1" y1="104.8" y2="104.8" class="raw-range" />
-    <circle cx="300.1" cy="104.8" r="3.4" class="raw-dot" />
+    <line x1="298.2" x2="298.2" y1="124.5" y2="75.2" class="raw-range" />
+    <circle cx="298.2" cy="102.8" r="3.4" class="raw-dot" />
   
     <line x1="300.1" x2="300.1" y1="109.7" y2="50.5" class="raw-range" />
     <circle cx="300.1" cy="83.8" r="3.4" class="raw-dot" />
+  
+    <line x1="300.1" x2="300.1" y1="104.8" y2="104.8" class="raw-range" />
+    <circle cx="300.1" cy="104.8" r="3.4" class="raw-dot" />
   
     <line x1="312.9" x2="312.9" y1="124.5" y2="94.9" class="raw-range" />
     <circle cx="312.9" cy="111.4" r="3.4" class="raw-dot" />
@@ -879,12 +895,12 @@
     </div>
   </figure>
 
-  <figure class="bloc-chart" style="--light:#4a3aa7;--dark:#9085e9">
+  <figure class="bloc-chart" style="--light:#8c564b;--dark:#c49c94">
     <figcaption>
-      <strong>Autres</strong>
-      <span class="fig">Hollande, Zemmour, Dupont-Aignan, etc.</span>
+      <strong>Lisnard</strong>
+      <span class="fig">David Lisnard, suivi à part depuis le 16 nov. 2026 (avant : dans « Autres »)</span>
     </figcaption>
-    <svg viewBox="0 0 360 190" role="img" aria-label="Estimation lissée du bloc Autres, 2,8 pourcent au 16 nov.">
+    <svg viewBox="0 0 360 190" role="img" aria-label="Estimation lissée du bloc Lisnard, 9,5 pourcent au 16 nov.">
       
     <line x1="30" x2="346" y1="164.0" y2="164.0" class="grid-line" />
     <text x="24" y="167.0" class="axis-label" text-anchor="end">0</text>
@@ -898,10 +914,93 @@
     <line x1="30" x2="346" y1="16.0" y2="16.0" class="grid-line" />
     <text x="24" y="19.0" class="axis-label" text-anchor="end">15</text>
   
-      <polygon points="338.7,153.3 346.0,154.7 346.0,118.1 338.7,119.6" class="band band-proj" />
-      <polygon points="30.0,144.1 182.5,135.5 206.4,131.6 221.1,135.5 232.1,138.3 246.8,141.7 254.1,143.1 259.7,144.0 272.5,145.8 285.4,146.9 285.4,146.9 289.0,147.2 294.6,147.6 298.2,147.8 298.2,147.8 300.1,148.0 300.1,148.0 312.9,149.8 324.0,151.2 333.1,152.3 333.1,152.3 338.7,153.3 338.7,119.6 333.1,120.6 333.1,120.6 324.0,122.1 312.9,123.6 300.1,125.8 300.1,125.8 298.2,125.9 298.2,125.9 294.6,125.8 289.0,125.8 285.4,125.6 285.4,125.6 272.5,123.5 259.7,122.1 254.1,120.7 246.8,118.7 232.1,115.1 221.1,112.8 206.4,110.1 182.5,105.5 30.0,85.7" class="band" />
-      <line x1="338.7" y1="136.4" x2="346.0" y2="136.4" class="mean-line mean-line-proj" />
-      <polyline points="30.0,114.9 182.5,120.5 206.4,120.9 221.1,124.2 232.1,126.7 246.8,130.2 254.1,131.9 259.7,133.1 272.5,134.7 285.4,136.3 285.4,136.3 289.0,136.5 294.6,136.7 298.2,136.8 298.2,136.8 300.1,136.9 300.1,136.9 312.9,136.7 324.0,136.6 333.1,136.5 333.1,136.5 338.7,136.4" class="mean-line" />
+      <polygon points="329.4,87.2 346.0,97.5 346.0,44.0 329.4,54.3" class="band band-proj" />
+      <polygon points="30.0,142.5 88.2,127.2 138.1,138.6 208.8,128.9 208.8,128.9 217.1,119.7 229.6,110.6 237.9,100.1 237.9,100.1 242.1,104.6 242.1,104.6 271.2,100.2 296.1,87.9 316.9,82.1 316.9,82.1 329.4,87.2 329.4,54.3 316.9,55.9 316.9,55.9 296.1,63.8 271.2,71.6 242.1,87.6 242.1,87.6 237.9,85.3 237.9,85.3 229.6,90.3 217.1,99.2 208.8,110.8 208.8,110.8 138.1,116.9 88.2,105.5 30.0,102.4" class="band" />
+      <line x1="329.4" y1="70.8" x2="346.0" y2="70.8" class="mean-line mean-line-proj" />
+      <polyline points="30.0,122.5 88.2,116.4 138.1,127.7 208.8,119.9 208.8,119.9 217.1,109.4 229.6,100.5 237.9,92.7 237.9,92.7 242.1,96.1 242.1,96.1 271.2,85.9 296.1,75.8 316.9,69.0 316.9,69.0 329.4,70.8" class="mean-line" />
+      
+    <line x1="30.0" x2="30.0" y1="124.5" y2="124.5" class="raw-range" />
+    <circle cx="30.0" cy="124.5" r="3.4" class="raw-dot" />
+  
+    <line x1="88.2" x2="88.2" y1="114.7" y2="114.7" class="raw-range" />
+    <circle cx="88.2" cy="114.7" r="3.4" class="raw-dot" />
+  
+    <line x1="138.1" x2="138.1" y1="129.5" y2="129.5" class="raw-range" />
+    <circle cx="138.1" cy="129.5" r="3.4" class="raw-dot" />
+  
+    <line x1="208.8" x2="208.8" y1="124.5" y2="124.5" class="raw-range" />
+    <circle cx="208.8" cy="124.5" r="3.4" class="raw-dot" />
+  
+    <line x1="208.8" x2="208.8" y1="124.5" y2="124.5" class="raw-range" />
+    <circle cx="208.8" cy="124.5" r="3.4" class="raw-dot" />
+  
+    <line x1="217.1" x2="217.1" y1="109.7" y2="99.9" class="raw-range" />
+    <circle cx="217.1" cy="104.8" r="3.4" class="raw-dot" />
+  
+    <line x1="229.6" x2="229.6" y1="109.7" y2="94.9" class="raw-range" />
+    <circle cx="229.6" cy="102.3" r="3.4" class="raw-dot" />
+  
+    <line x1="237.9" x2="237.9" y1="85.1" y2="85.1" class="raw-range" />
+    <circle cx="237.9" cy="85.1" r="3.4" class="raw-dot" />
+  
+    <line x1="237.9" x2="237.9" y1="94.9" y2="85.1" class="raw-range" />
+    <circle cx="237.9" cy="90.0" r="3.4" class="raw-dot" />
+  
+    <line x1="242.1" x2="242.1" y1="104.8" y2="104.8" class="raw-range" />
+    <circle cx="242.1" cy="104.8" r="3.4" class="raw-dot" />
+  
+    <line x1="242.1" x2="242.1" y1="99.9" y2="99.9" class="raw-range" />
+    <circle cx="242.1" cy="99.9" r="3.4" class="raw-dot" />
+  
+    <line x1="271.2" x2="271.2" y1="94.9" y2="75.2" class="raw-range" />
+    <circle cx="271.2" cy="86.7" r="3.4" class="raw-dot" />
+  
+    <line x1="296.1" x2="296.1" y1="75.2" y2="75.2" class="raw-range" />
+    <circle cx="296.1" cy="75.2" r="3.4" class="raw-dot" />
+  
+    <line x1="316.9" x2="316.9" y1="85.1" y2="65.3" class="raw-range" />
+    <circle cx="316.9" cy="70.3" r="3.4" class="raw-dot" />
+  
+    <line x1="316.9" x2="316.9" y1="65.3" y2="45.6" class="raw-range" />
+    <circle cx="316.9" cy="55.5" r="3.4" class="raw-dot" />
+  
+    <line x1="329.4" x2="329.4" y1="85.1" y2="60.4" class="raw-range" />
+    <circle cx="329.4" cy="73.5" r="3.4" class="raw-dot" />
+  
+      <circle cx="346.0" cy="70.8" r="3.4" class="proj-dot" />
+      <text x="342.0" y="62.8" class="point-label" text-anchor="end">9,5 % ±2,7</text>
+      <text x="30" y="184" class="axis-label" text-anchor="start">31 août</text>
+      <text x="346" y="184" class="axis-label" text-anchor="end">16 nov. (proj.)</text>
+    </svg>
+    <div class="q-note">
+      Q = 0.299 pts²/j
+      (ajusté par vraisemblance)
+    </div>
+  </figure>
+
+  <figure class="bloc-chart" style="--light:#4a3aa7;--dark:#9085e9">
+    <figcaption>
+      <strong>Autres</strong>
+      <span class="fig">Hollande, Zemmour, Dupont-Aignan, etc.</span>
+    </figcaption>
+    <svg viewBox="0 0 360 190" role="img" aria-label="Estimation lissée du bloc Autres, 2,1 pourcent au 16 nov.">
+      
+    <line x1="30" x2="346" y1="164.0" y2="164.0" class="grid-line" />
+    <text x="24" y="167.0" class="axis-label" text-anchor="end">0</text>
+  
+    <line x1="30" x2="346" y1="114.7" y2="114.7" class="grid-line" />
+    <text x="24" y="117.7" class="axis-label" text-anchor="end">5</text>
+  
+    <line x1="30" x2="346" y1="65.3" y2="65.3" class="grid-line" />
+    <text x="24" y="68.3" class="axis-label" text-anchor="end">10</text>
+  
+    <line x1="30" x2="346" y1="16.0" y2="16.0" class="grid-line" />
+    <text x="24" y="19.0" class="axis-label" text-anchor="end">15</text>
+  
+      <polygon points="338.7,153.5 346.0,155.8 346.0,131.4 338.7,133.7" class="band band-proj" />
+      <polygon points="30.0,144.3 182.5,135.9 206.4,132.1 221.1,136.2 232.1,139.1 246.8,143.0 254.1,144.5 259.7,145.5 272.5,147.8 285.4,149.2 285.4,149.2 289.0,149.4 294.6,150.0 298.2,150.1 298.2,150.1 300.1,150.3 300.1,150.3 312.9,151.7 324.0,152.1 333.1,152.2 333.1,152.2 338.7,153.5 338.7,133.7 333.1,135.6 333.1,135.6 324.0,134.8 312.9,133.7 300.1,133.8 300.1,133.8 298.2,133.5 298.2,133.5 294.6,132.7 289.0,131.9 285.4,131.0 285.4,131.0 272.5,127.0 259.7,124.3 254.1,122.6 246.8,120.2 232.1,116.1 221.1,113.6 206.4,110.6 182.5,105.9 30.0,86.0" class="band" />
+      <line x1="338.7" y1="143.6" x2="346.0" y2="143.6" class="mean-line mean-line-proj" />
+      <polyline points="30.0,115.2 182.5,120.9 206.4,121.3 221.1,124.9 232.1,127.6 246.8,131.6 254.1,133.5 259.7,134.9 272.5,137.4 285.4,140.1 285.4,140.1 289.0,140.7 294.6,141.4 298.2,141.8 298.2,141.8 300.1,142.1 300.1,142.1 312.9,142.7 324.0,143.4 333.1,143.9 333.1,143.9 338.7,143.6" class="mean-line" />
       
     <line x1="30.0" x2="30.0" y1="119.6" y2="85.1" class="raw-range" />
     <circle cx="30.0" cy="102.3" r="3.4" class="raw-dot" />
@@ -922,7 +1021,7 @@
     <circle cx="246.8" cy="132.5" r="3.4" class="raw-dot" />
   
     <line x1="254.1" x2="254.1" y1="159.1" y2="85.1" class="raw-range" />
-    <circle cx="254.1" cy="136.8" r="3.4" class="raw-dot" />
+    <circle cx="254.1" cy="136.9" r="3.4" class="raw-dot" />
   
     <line x1="259.7" x2="259.7" y1="159.1" y2="119.6" class="raw-range" />
     <circle cx="259.7" cy="139.3" r="3.4" class="raw-dot" />
@@ -930,47 +1029,47 @@
     <line x1="272.5" x2="272.5" y1="154.1" y2="94.9" class="raw-range" />
     <circle cx="272.5" cy="134.8" r="3.4" class="raw-dot" />
   
-    <line x1="285.4" x2="285.4" y1="164.0" y2="75.2" class="raw-range" />
-    <circle cx="285.4" cy="132.7" r="3.4" class="raw-dot" />
-  
     <line x1="285.4" x2="285.4" y1="159.1" y2="114.7" class="raw-range" />
-    <circle cx="285.4" cy="143.6" r="3.4" class="raw-dot" />
+    <circle cx="285.4" cy="146.7" r="3.4" class="raw-dot" />
   
-    <line x1="289.0" x2="289.0" y1="159.1" y2="99.9" class="raw-range" />
-    <circle cx="289.0" cy="140.3" r="3.4" class="raw-dot" />
+    <line x1="285.4" x2="285.4" y1="164.0" y2="75.2" class="raw-range" />
+    <circle cx="285.4" cy="133.0" r="3.4" class="raw-dot" />
+  
+    <line x1="289.0" x2="289.0" y1="159.1" y2="129.5" class="raw-range" />
+    <circle cx="289.0" cy="142.5" r="3.4" class="raw-dot" />
   
     <line x1="294.6" x2="294.6" y1="159.1" y2="65.3" class="raw-range" />
-    <circle cx="294.6" cy="139.5" r="3.4" class="raw-dot" />
+    <circle cx="294.6" cy="141.4" r="3.4" class="raw-dot" />
   
-    <line x1="298.2" x2="298.2" y1="159.1" y2="85.1" class="raw-range" />
-    <circle cx="298.2" cy="135.3" r="3.4" class="raw-dot" />
+    <line x1="298.2" x2="298.2" y1="154.1" y2="104.8" class="raw-range" />
+    <circle cx="298.2" cy="141.3" r="3.4" class="raw-dot" />
   
-    <line x1="298.2" x2="298.2" y1="154.1" y2="85.1" class="raw-range" />
-    <circle cx="298.2" cy="137.8" r="3.4" class="raw-dot" />
+    <line x1="298.2" x2="298.2" y1="159.1" y2="99.9" class="raw-range" />
+    <circle cx="298.2" cy="138.4" r="3.4" class="raw-dot" />
   
-    <line x1="300.1" x2="300.1" y1="159.1" y2="99.9" class="raw-range" />
-    <circle cx="300.1" cy="137.7" r="3.4" class="raw-dot" />
+    <line x1="300.1" x2="300.1" y1="159.1" y2="119.6" class="raw-range" />
+    <circle cx="300.1" cy="139.5" r="3.4" class="raw-dot" />
   
-    <line x1="300.1" x2="300.1" y1="159.1" y2="104.8" class="raw-range" />
-    <circle cx="300.1" cy="144.3" r="3.4" class="raw-dot" />
+    <line x1="300.1" x2="300.1" y1="159.1" y2="124.5" class="raw-range" />
+    <circle cx="300.1" cy="150.9" r="3.4" class="raw-dot" />
   
-    <line x1="312.9" x2="312.9" y1="159.1" y2="75.2" class="raw-range" />
-    <circle cx="312.9" cy="133.7" r="3.4" class="raw-dot" />
+    <line x1="312.9" x2="312.9" y1="159.1" y2="119.6" class="raw-range" />
+    <circle cx="312.9" cy="140.8" r="3.4" class="raw-dot" />
   
-    <line x1="324.0" x2="324.0" y1="154.1" y2="75.2" class="raw-range" />
-    <circle cx="324.0" cy="139.5" r="3.4" class="raw-dot" />
+    <line x1="324.0" x2="324.0" y1="154.1" y2="124.5" class="raw-range" />
+    <circle cx="324.0" cy="144.3" r="3.4" class="raw-dot" />
   
-    <line x1="333.1" x2="333.1" y1="154.1" y2="45.6" class="raw-range" />
-    <circle cx="333.1" cy="130.1" r="3.4" class="raw-dot" />
+    <line x1="333.1" x2="333.1" y1="154.1" y2="134.4" class="raw-range" />
+    <circle cx="333.1" cy="145.0" r="3.4" class="raw-dot" />
   
-    <line x1="333.1" x2="333.1" y1="159.1" y2="65.3" class="raw-range" />
-    <circle cx="333.1" cy="136.0" r="3.4" class="raw-dot" />
+    <line x1="333.1" x2="333.1" y1="159.1" y2="134.4" class="raw-range" />
+    <circle cx="333.1" cy="146.4" r="3.4" class="raw-dot" />
   
-    <line x1="338.7" x2="338.7" y1="159.1" y2="60.4" class="raw-range" />
-    <circle cx="338.7" cy="134.0" r="3.4" class="raw-dot" />
+    <line x1="338.7" x2="338.7" y1="159.1" y2="119.6" class="raw-range" />
+    <circle cx="338.7" cy="139.5" r="3.4" class="raw-dot" />
   
-      <circle cx="346.0" cy="136.4" r="3.4" class="proj-dot" />
-      <text x="342.0" y="128.4" class="point-label" text-anchor="end">2,8 % ±1,9</text>
+      <circle cx="346.0" cy="143.6" r="3.4" class="proj-dot" />
+      <text x="342.0" y="135.6" class="point-label" text-anchor="end">2,1 % ±1,2</text>
       <text x="30" y="184" class="axis-label" text-anchor="start">27 mai</text>
       <text x="346" y="184" class="axis-label" text-anchor="end">16 nov. (proj.)</text>
     </svg>
@@ -989,148 +1088,148 @@
     <div class="table-scroll">
       <table>
         <thead>
-          <tr><th>Date</th><th>Institut</th><th>RN</th><th>Centre</th><th>LFI</th><th>Gauche mod. / écolo</th><th>Droite classique</th><th>Autres</th></tr>
+          <tr><th>Date</th><th>Institut</th><th>RN</th><th>Centre</th><th>LFI</th><th>Gauche mod. / écolo</th><th>LR (Retailleau)</th><th>Lisnard</th><th>Autres</th></tr>
         </thead>
         <tbody>
       <tr class="log-row">
         <td>14 novembre 2026</td>
         <td class="fig">Elabe — BFMTV / La Tribune Dimanche</td>
-        <td class="fig">Le Pen (C1) / Le Pen (C2) / Le Pen (C3) / Le Pen (C4) / Le Pen (C5) / Le Pen (C6) 31,0–33,0 %</td><td class="fig">Attal (C2) / Attal (C4) / Philippe (C1) / Philippe (C3) / Philippe (C5) / Philippe (C6) 8,5–15,0 %</td><td class="fig">Mélenchon (C1) / Mélenchon (C2) / Mélenchon (C3) / Mélenchon (C4) / Mélenchon (C5) / Mélenchon (C6) 17,0–18,5 %</td><td class="fig">Glucksmann (C1) / Glucksmann (C2) / Glucksmann (C3) / Glucksmann (C4) / Glucksmann (C5) / Glucksmann (C6) 10,5–14,0 %</td><td class="fig">Retailleau (C1) / Retailleau (C2) / Retailleau (C3) / Retailleau (C4) / Retailleau (C5) / Retailleau (C6) 4,0–9,0 %</td><td class="fig">Arthaud (C1) / Arthaud (C2) / Arthaud (C3) / Arthaud (C4) / Arthaud (C5) / Arthaud (C6) / Dupont-Aignan (C1) / Dupont-Aignan (C2) / Dupont-Aignan (C3) / Dupont-Aignan (C4) / Dupont-Aignan (C5) / Dupont-Aignan (C6) / Lisnard (C4) / Lisnard (C5) / Lisnard (C6) / Polony (C6) / Riner (C6) / Roussel (C1) / Roussel (C2) / Roussel (C3) / Roussel (C4) / Roussel (C5) / Roussel (C6) / Ruffin (C4) / Tondelier (C1) / Tondelier (C2) / Tondelier (C3) / Tondelier (C6) / Villepin (C1) / Villepin (C2) / Zemmour (C1) / Zemmour (C2) / Zemmour (C3) / Zemmour (C4) / Zemmour (C5) / Zemmour (C6) 0,5–10,5 %</td>
+        <td class="fig">Le Pen (C1) / Le Pen (C2) / Le Pen (C3) / Le Pen (C4) / Le Pen (C5) / Le Pen (C6) 31,0–33,0 %</td><td class="fig">Attal (C2) / Attal (C4) / Philippe (C1) / Philippe (C3) / Philippe (C5) / Philippe (C6) 8,5–15,0 %</td><td class="fig">Mélenchon (C1) / Mélenchon (C2) / Mélenchon (C3) / Mélenchon (C4) / Mélenchon (C5) / Mélenchon (C6) 17,0–18,5 %</td><td class="fig">Glucksmann (C1) / Glucksmann (C2) / Glucksmann (C3) / Glucksmann (C4) / Glucksmann (C5) / Glucksmann (C6) 10,5–14,0 %</td><td class="fig">Retailleau (C1) / Retailleau (C2) / Retailleau (C3) / Retailleau (C4) / Retailleau (C5) / Retailleau (C6) 4,0–9,0 %</td><td class="fig">Lisnard (C4) / Lisnard (C5) / Lisnard (C6) 8,0–10,5 %</td><td class="fig">Arthaud (C1) / Arthaud (C2) / Arthaud (C3) / Arthaud (C4) / Arthaud (C5) / Arthaud (C6) / Dupont-Aignan (C1) / Dupont-Aignan (C2) / Dupont-Aignan (C3) / Dupont-Aignan (C4) / Dupont-Aignan (C5) / Dupont-Aignan (C6) / Polony (C6) / Riner (C6) / Roussel (C1) / Roussel (C2) / Roussel (C3) / Roussel (C4) / Roussel (C5) / Roussel (C6) / Ruffin (C4) / Tondelier (C1) / Tondelier (C2) / Tondelier (C3) / Tondelier (C6) / Villepin (C1) / Villepin (C2) / Zemmour (C1) / Zemmour (C2) / Zemmour (C3) / Zemmour (C4) / Zemmour (C5) / Zemmour (C6) 0,5–4,5 %</td>
       </tr>
       <tr class="log-row">
         <td>11 novembre 2026</td>
         <td class="fig">Cluster17 — Politico</td>
-        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) / Le Pen (H4) 27,0–31,0 %</td><td class="fig">Attal (H2) / Lagarde (H3) / Philippe (H1) / Philippe (H4) 8,0–14,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) / Mélenchon (H4) 19,0–20,5 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) / Glucksmann (H4) 8,0–11,5 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) / Retailleau (H4) 5,0–6,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Arthaud (H4) / Asselineau (H4) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Dupont-Aignan (H4) / Lisnard (H1) / Lisnard (H2) / Lisnard (H3) / Lisnard (H4) / Polony (H4) / Riner (H4) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Roussel (H4) / Ruffin (H4) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Tondelier (H4) / Villepin (H4) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) / Zemmour (H4) 0,5–10,0 %</td>
+        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) / Le Pen (H4) 27,0–31,0 %</td><td class="fig">Attal (H2) / Lagarde (H3) / Philippe (H1) / Philippe (H4) 8,0–14,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) / Mélenchon (H4) 19,0–20,5 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) / Glucksmann (H4) 8,0–11,5 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) / Retailleau (H4) 5,0–6,0 %</td><td class="fig">Lisnard (H1) / Lisnard (H2) / Lisnard (H3) / Lisnard (H4) 8,0–10,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Arthaud (H4) / Asselineau (H4) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Dupont-Aignan (H4) / Polony (H4) / Riner (H4) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Roussel (H4) / Ruffin (H4) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Tondelier (H4) / Villepin (H4) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) / Zemmour (H4) 0,5–3,0 %</td>
       </tr>
       <tr class="log-row">
         <td>11 novembre 2026</td>
         <td class="fig">OpinionWay — Les Echos / Radio Classique</td>
-        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) 34,0 %</td><td class="fig">Attal (H2) / Philippe (H1) / Philippe (H3) 10,0–12,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) 16,0–17,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) 11,0–13,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) 4,0–6,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Lisnard (H1) / Lisnard (H2) / Lisnard (H3) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) 1,0–12,0 %</td>
+        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) 34,0 %</td><td class="fig">Attal (H2) / Philippe (H1) / Philippe (H3) 10,0–12,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) 16,0–17,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) 11,0–13,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) 4,0–6,0 %</td><td class="fig">Lisnard (H1) / Lisnard (H2) / Lisnard (H3) 10,0–12,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) 1,0–3,0 %</td>
       </tr>
       <tr class="log-row">
         <td>9 novembre 2026</td>
         <td class="fig">Toluna — M6 / RTL</td>
-        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) / Le Pen (H4) / Le Pen (H5) 34,0–36,0 %</td><td class="fig">Attal (H2) / Attal (H5) / Philippe (H1) / Philippe (H3) / Philippe (H4) 9,0–14,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) / Mélenchon (H4) / Mélenchon (H5) 18,0–19,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) / Glucksmann (H4) / Glucksmann (H5) 11,0–13,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) / Retailleau (H4) / Retailleau (H5) 5,0–10,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Arthaud (H4) / Arthaud (H5) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Dupont-Aignan (H4) / Dupont-Aignan (H5) / Lisnard (H1) / Lisnard (H2) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Roussel (H4) / Roussel (H5) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Tondelier (H4) / Tondelier (H5) / Villepin (H1) / Villepin (H2) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) / Zemmour (H4) / Zemmour (H5) 1,0–9,0 %</td>
+        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) / Le Pen (H4) / Le Pen (H5) 34,0–36,0 %</td><td class="fig">Attal (H2) / Attal (H5) / Philippe (H1) / Philippe (H3) / Philippe (H4) 9,0–14,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) / Mélenchon (H4) / Mélenchon (H5) 18,0–19,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) / Glucksmann (H4) / Glucksmann (H5) 11,0–13,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) / Retailleau (H4) / Retailleau (H5) 5,0–10,0 %</td><td class="fig">Lisnard (H1) / Lisnard (H2) 9,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Arthaud (H4) / Arthaud (H5) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Dupont-Aignan (H4) / Dupont-Aignan (H5) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Roussel (H4) / Roussel (H5) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Tondelier (H4) / Tondelier (H5) / Villepin (H1) / Villepin (H2) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) / Zemmour (H4) / Zemmour (H5) 1,0–4,0 %</td>
       </tr>
       <tr class="log-row">
         <td>3 novembre 2026</td>
         <td class="fig">IFOP — LCI</td>
-        <td class="fig">Le Pen (S1) / Le Pen (S2) / Le Pen (S3) / Le Pen (S4) 35,0–37,0 %</td><td class="fig">Attal (S2) / Philippe (S1) / Philippe (S3) / Philippe (S4) 9,0–15,0 %</td><td class="fig">Mélenchon (S1) / Mélenchon (S2) / Mélenchon (S3) / Mélenchon (S4) 17,5–18,0 %</td><td class="fig">Glucksmann (S1) / Glucksmann (S2) / Glucksmann (S3) / Glucksmann (S4) 10,0–13,0 %</td><td class="fig">Retailleau (S1) / Retailleau (S2) / Retailleau (S3) 4,0–7,0 %</td><td class="fig">Arthaud (S1) / Arthaud (S2) / Arthaud (S3) / Arthaud (S4) / Dupont-Aignan (S1) / Dupont-Aignan (S2) / Dupont-Aignan (S3) / Dupont-Aignan (S4) / Lisnard (S1) / Lisnard (S2) / Lisnard (S4) / Roussel (S1) / Roussel (S2) / Roussel (S3) / Roussel (S4) / Tondelier (S1) / Tondelier (S2) / Tondelier (S3) / Tondelier (S4) / Zemmour (S1) / Zemmour (S2) / Zemmour (S3) / Zemmour (S4) 0,5–9,0 %</td>
+        <td class="fig">Le Pen (S1) / Le Pen (S2) / Le Pen (S3) / Le Pen (S4) 35,0–37,0 %</td><td class="fig">Attal (S2) / Philippe (S1) / Philippe (S3) / Philippe (S4) 9,0–15,0 %</td><td class="fig">Mélenchon (S1) / Mélenchon (S2) / Mélenchon (S3) / Mélenchon (S4) 17,5–18,0 %</td><td class="fig">Glucksmann (S1) / Glucksmann (S2) / Glucksmann (S3) / Glucksmann (S4) 10,0–13,0 %</td><td class="fig">Retailleau (S1) / Retailleau (S2) / Retailleau (S3) 4,0–7,0 %</td><td class="fig">Lisnard (S1) / Lisnard (S2) / Lisnard (S4) 7,0–9,0 %</td><td class="fig">Arthaud (S1) / Arthaud (S2) / Arthaud (S3) / Arthaud (S4) / Dupont-Aignan (S1) / Dupont-Aignan (S2) / Dupont-Aignan (S3) / Dupont-Aignan (S4) / Roussel (S1) / Roussel (S2) / Roussel (S3) / Roussel (S4) / Tondelier (S1) / Tondelier (S2) / Tondelier (S3) / Tondelier (S4) / Zemmour (S1) / Zemmour (S2) / Zemmour (S3) / Zemmour (S4) 0,5–4,5 %</td>
       </tr>
       <tr class="log-row">
         <td>26 octobre 2026</td>
         <td class="fig">Cluster17 — Politico</td>
-        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) 30,5–33,0 %</td><td class="fig">Attal (H2) / Philippe (H1) / Philippe (H3) 12,0–17,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) 18,5–19,5 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) 13,0–14,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) 7,0–10,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Hollande (H3) / Lisnard (H3) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) 0,5–8,0 %</td>
+        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) 30,5–33,0 %</td><td class="fig">Attal (H2) / Philippe (H1) / Philippe (H3) 12,0–17,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) 18,5–19,5 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) 13,0–14,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) 7,0–10,0 %</td><td class="fig">Lisnard (H3) 8,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Hollande (H3) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) 0,5–6,5 %</td>
       </tr>
       <tr class="log-row">
         <td>24 octobre 2026</td>
         <td class="fig">Ipsos — Le Parisien (Ipsos bva / CESI)</td>
-        <td class="fig">Bardella (B) / Bardella (C) / Le Pen (A) / Le Pen (D) 32,0–33,5 %</td><td class="fig">Attal (C) / Philippe (A) / Philippe (B) / Philippe (D) 9,5–15,0 %</td><td class="fig">Mélenchon (A) / Mélenchon (B) / Mélenchon (C) / Mélenchon (D) 17,0 %</td><td class="fig">Glucksmann (A) / Glucksmann (B) / Glucksmann (C) / Glucksmann (D) 13,0–15,5 %</td><td class="fig">Retailleau (A) / Retailleau (B) / Retailleau (C) / Retailleau (D) 5,5–11,5 %</td><td class="fig">Arthaud (A) / Arthaud (B) / Arthaud (C) / Arthaud (D) / Dupont-Aignan (A) / Dupont-Aignan (B) / Dupont-Aignan (C) / Dupont-Aignan (D) / Lisnard (D) / Roussel (A) / Roussel (B) / Roussel (C) / Roussel (D) / Tondelier (A) / Tondelier (B) / Tondelier (C) / Tondelier (D) / Zemmour (A) / Zemmour (B) / Zemmour (C) / Zemmour (D) 0,5–6,5 %</td>
+        <td class="fig">Bardella (B) / Bardella (C) / Le Pen (A) / Le Pen (D) 32,0–33,5 %</td><td class="fig">Attal (C) / Philippe (A) / Philippe (B) / Philippe (D) 9,5–15,0 %</td><td class="fig">Mélenchon (A) / Mélenchon (B) / Mélenchon (C) / Mélenchon (D) 17,0 %</td><td class="fig">Glucksmann (A) / Glucksmann (B) / Glucksmann (C) / Glucksmann (D) 13,0–15,5 %</td><td class="fig">Retailleau (A) / Retailleau (B) / Retailleau (C) / Retailleau (D) 5,5–11,5 %</td><td class="fig">Lisnard (D) 6,5 %</td><td class="fig">Arthaud (A) / Arthaud (B) / Arthaud (C) / Arthaud (D) / Dupont-Aignan (A) / Dupont-Aignan (B) / Dupont-Aignan (C) / Dupont-Aignan (D) / Roussel (A) / Roussel (B) / Roussel (C) / Roussel (D) / Tondelier (A) / Tondelier (B) / Tondelier (C) / Tondelier (D) / Zemmour (A) / Zemmour (B) / Zemmour (C) / Zemmour (D) 0,5–4,5 %</td>
       </tr>
       <tr class="log-row">
         <td>23 octobre 2026</td>
         <td class="fig">Toluna — M6 / RTL</td>
-        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) / Le Pen (H4) / Le Pen (H5) 33,0–35,0 %</td><td class="fig">Attal (H2) / Attal (H5) / Philippe (H1) / Philippe (H3) / Philippe (H4) 10,0–16,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) / Mélenchon (H4) / Mélenchon (H5) 17,0–19,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) / Glucksmann (H4) / Glucksmann (H5) 12,0–14,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) / Retailleau (H4) / Retailleau (H5) 4,0–9,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Arthaud (H4) / Arthaud (H5) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Dupont-Aignan (H4) / Dupont-Aignan (H5) / Lisnard (H1) / Lisnard (H2) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Roussel (H4) / Roussel (H5) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Tondelier (H4) / Tondelier (H5) / Villepin (H1) / Villepin (H2) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) / Zemmour (H4) / Zemmour (H5) 1,0–8,0 %</td>
+        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) / Le Pen (H4) / Le Pen (H5) 33,0–35,0 %</td><td class="fig">Attal (H2) / Attal (H5) / Philippe (H1) / Philippe (H3) / Philippe (H4) 10,0–16,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) / Mélenchon (H4) / Mélenchon (H5) 17,0–19,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) / Glucksmann (H4) / Glucksmann (H5) 12,0–14,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) / Retailleau (H4) / Retailleau (H5) 4,0–9,0 %</td><td class="fig">Lisnard (H1) / Lisnard (H2) 7,0–8,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Arthaud (H4) / Arthaud (H5) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Dupont-Aignan (H4) / Dupont-Aignan (H5) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Roussel (H4) / Roussel (H5) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Tondelier (H4) / Tondelier (H5) / Villepin (H1) / Villepin (H2) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) / Zemmour (H4) / Zemmour (H5) 1,0–6,0 %</td>
       </tr>
       <tr class="log-row">
         <td>22 octobre 2026</td>
         <td class="fig">OpinionWay — CNews</td>
-        <td class="fig">Le Pen (H) 36,0 %</td><td class="fig">Philippe (H) 12,0 %</td><td class="fig">Mélenchon (H) 16,0 %</td><td class="fig">Glucksmann (H) 13,0 %</td><td class="fig">Retailleau (H) 6,0 %</td><td class="fig">Arthaud (H) / Bouamrane (H) / Dupont-Aignan (H) / Lisnard (H) / Roussel (H) / Tondelier (H) / Zemmour (H) 0,5–6,0 %</td>
+        <td class="fig">Le Pen (H) 36,0 %</td><td class="fig">Philippe (H) 12,0 %</td><td class="fig">Mélenchon (H) 16,0 %</td><td class="fig">Glucksmann (H) 13,0 %</td><td class="fig">Retailleau (H) 6,0 %</td><td class="fig">Lisnard (H) 6,0 %</td><td class="fig">Arthaud (H) / Bouamrane (H) / Dupont-Aignan (H) / Roussel (H) / Tondelier (H) / Zemmour (H) 0,5–4,0 %</td>
       </tr>
       <tr class="log-row">
         <td>20 octobre 2026</td>
         <td class="fig">IFOP — LCI / Le Figaro / Sud Radio</td>
-        <td class="fig">Le Pen (S1) / Le Pen (S2) / Le Pen (S3) / Le Pen (S4) / Le Pen (S5) / Le Pen (S6) / Le Pen (S7) / Le Pen (S8) 34,0–38,0 %</td><td class="fig">Attal (S3) / Philippe (S1) / Philippe (S2) / Philippe (S4) / Philippe (S5) / Philippe (S6) / Philippe (S7) / Philippe (S8) 12,0–16,0 %</td><td class="fig">Mélenchon (S1) / Mélenchon (S2) / Mélenchon (S3) / Mélenchon (S4) / Mélenchon (S5) / Mélenchon (S6) / Mélenchon (S7) / Mélenchon (S8) 15,0–20,0 %</td><td class="fig">Glucksmann (S1) / Glucksmann (S2) / Glucksmann (S3) / Glucksmann (S4) / Glucksmann (S6) / Glucksmann (S7) / Glucksmann (S8) 12,0–16,0 %</td><td class="fig">Retailleau (S1) / Retailleau (S2) / Retailleau (S3) / Retailleau (S4) / Retailleau (S5) / Retailleau (S6) / Retailleau (S8) 5,0–7,5 %</td><td class="fig">Arthaud (S1) / Arthaud (S2) / Arthaud (S3) / Arthaud (S4) / Arthaud (S5) / Arthaud (S7) / Arthaud (S8) / Dupont-Aignan (S1) / Dupont-Aignan (S2) / Dupont-Aignan (S3) / Dupont-Aignan (S4) / Dupont-Aignan (S5) / Dupont-Aignan (S6) / Dupont-Aignan (S7) / Dupont-Aignan (S8) / Hollande (S5) / Lisnard (S6) / Lisnard (S7) / Polony (S8) / Roussel (S1) / Roussel (S2) / Roussel (S3) / Roussel (S6) / Roussel (S7) / Roussel (S8) / Ruffin (S6) / Ruffin (S8) / Tondelier (S1) / Tondelier (S2) / Tondelier (S3) / Tondelier (S6) / Tondelier (S7) / Tondelier (S8) / Villepin (S6) / Zemmour (S1) / Zemmour (S2) / Zemmour (S3) / Zemmour (S4) / Zemmour (S5) / Zemmour (S6) / Zemmour (S7) / Zemmour (S8) 0,5–10,0 %</td>
+        <td class="fig">Le Pen (S1) / Le Pen (S2) / Le Pen (S3) / Le Pen (S4) / Le Pen (S5) / Le Pen (S6) / Le Pen (S7) / Le Pen (S8) 34,0–38,0 %</td><td class="fig">Attal (S3) / Philippe (S1) / Philippe (S2) / Philippe (S4) / Philippe (S5) / Philippe (S6) / Philippe (S7) / Philippe (S8) 12,0–16,0 %</td><td class="fig">Mélenchon (S1) / Mélenchon (S2) / Mélenchon (S3) / Mélenchon (S4) / Mélenchon (S5) / Mélenchon (S6) / Mélenchon (S7) / Mélenchon (S8) 15,0–20,0 %</td><td class="fig">Glucksmann (S1) / Glucksmann (S2) / Glucksmann (S3) / Glucksmann (S4) / Glucksmann (S6) / Glucksmann (S7) / Glucksmann (S8) 12,0–16,0 %</td><td class="fig">Retailleau (S1) / Retailleau (S2) / Retailleau (S3) / Retailleau (S4) / Retailleau (S5) / Retailleau (S6) / Retailleau (S8) 5,0–7,5 %</td><td class="fig">Lisnard (S6) / Lisnard (S7) 5,5–7,0 %</td><td class="fig">Arthaud (S1) / Arthaud (S2) / Arthaud (S3) / Arthaud (S4) / Arthaud (S5) / Arthaud (S7) / Arthaud (S8) / Dupont-Aignan (S1) / Dupont-Aignan (S2) / Dupont-Aignan (S3) / Dupont-Aignan (S4) / Dupont-Aignan (S5) / Dupont-Aignan (S6) / Dupont-Aignan (S7) / Dupont-Aignan (S8) / Hollande (S5) / Polony (S8) / Roussel (S1) / Roussel (S2) / Roussel (S3) / Roussel (S6) / Roussel (S7) / Roussel (S8) / Ruffin (S6) / Ruffin (S8) / Tondelier (S1) / Tondelier (S2) / Tondelier (S3) / Tondelier (S6) / Tondelier (S7) / Tondelier (S8) / Villepin (S6) / Zemmour (S1) / Zemmour (S2) / Zemmour (S3) / Zemmour (S4) / Zemmour (S5) / Zemmour (S6) / Zemmour (S7) / Zemmour (S8) 0,5–10,0 %</td>
       </tr>
       <tr class="log-row">
         <td>18 octobre 2026</td>
         <td class="fig">YouGov — Le HuffPost</td>
-        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) / Le Pen (H4) / Le Pen (H5) 35,0–37,0 %</td><td class="fig">Attal (H2) / Philippe (H1) / Philippe (H3) / Philippe (H4) / Philippe (H5) 8,0–15,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) / Mélenchon (H4) / Mélenchon (H5) 13,0–16,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) / Glucksmann (H5) 12,0–14,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) / Retailleau (H4) / Retailleau (H5) 5,0–9,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Arthaud (H4) / Arthaud (H5) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Dupont-Aignan (H4) / Dupont-Aignan (H5) / Hollande (H4) / Lisnard (H5) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Roussel (H4) / Roussel (H5) / Ruffin (H5) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Tondelier (H4) / Tondelier (H5) / Villepin (H5) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) / Zemmour (H4) / Zemmour (H5) 0,0–9,0 %</td>
+        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) / Le Pen (H4) / Le Pen (H5) 35,0–37,0 %</td><td class="fig">Attal (H2) / Philippe (H1) / Philippe (H3) / Philippe (H4) / Philippe (H5) 8,0–15,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) / Mélenchon (H4) / Mélenchon (H5) 13,0–16,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) / Glucksmann (H5) 12,0–14,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) / Retailleau (H4) / Retailleau (H5) 5,0–9,0 %</td><td class="fig">Lisnard (H5) 4,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Arthaud (H4) / Arthaud (H5) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Dupont-Aignan (H4) / Dupont-Aignan (H5) / Hollande (H4) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Roussel (H4) / Roussel (H5) / Ruffin (H5) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Tondelier (H4) / Tondelier (H5) / Villepin (H5) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) / Zemmour (H4) / Zemmour (H5) 0,0–9,0 %</td>
       </tr>
       <tr class="log-row">
         <td>17 octobre 2026</td>
         <td class="fig">Elabe — BFMTV / La Tribune Dimanche</td>
-        <td class="fig">Le Pen (C1) / Le Pen (C2) / Le Pen (C3) / Le Pen (C4) / Le Pen (C5) / Le Pen (C6) 31,0–33,5 %</td><td class="fig">Attal (C2) / Attal (C4) / Philippe (C1) / Philippe (C3) / Philippe (C5) / Philippe (C6) 9,5–16,5 %</td><td class="fig">Mélenchon (C1) / Mélenchon (C2) / Mélenchon (C3) / Mélenchon (C4) / Mélenchon (C5) / Mélenchon (C6) 15,0–16,0 %</td><td class="fig">Glucksmann (C1) / Glucksmann (C2) / Glucksmann (C3) / Glucksmann (C4) / Glucksmann (C5) / Glucksmann (C6) 15,0–16,5 %</td><td class="fig">Retailleau (C1) / Retailleau (C2) / Retailleau (C3) / Retailleau (C4) / Retailleau (C5) / Retailleau (C6) 6,5–9,5 %</td><td class="fig">Arthaud (C1) / Arthaud (C2) / Arthaud (C3) / Arthaud (C4) / Arthaud (C5) / Arthaud (C6) / Dupont-Aignan (C1) / Dupont-Aignan (C2) / Dupont-Aignan (C3) / Dupont-Aignan (C4) / Dupont-Aignan (C5) / Dupont-Aignan (C6) / Lisnard (C3) / Lisnard (C4) / Polony (C6) / Roussel (C1) / Roussel (C2) / Roussel (C3) / Roussel (C4) / Roussel (C5) / Roussel (C6) / Ruffin (C4) / Tondelier (C1) / Tondelier (C2) / Tondelier (C3) / Tondelier (C5) / Tondelier (C6) / Villepin (C1) / Villepin (C2) / Zemmour (C1) / Zemmour (C2) / Zemmour (C3) / Zemmour (C4) / Zemmour (C5) / Zemmour (C6) 0,5–6,5 %</td>
+        <td class="fig">Le Pen (C1) / Le Pen (C2) / Le Pen (C3) / Le Pen (C4) / Le Pen (C5) / Le Pen (C6) 31,0–33,5 %</td><td class="fig">Attal (C2) / Attal (C4) / Philippe (C1) / Philippe (C3) / Philippe (C5) / Philippe (C6) 9,5–16,5 %</td><td class="fig">Mélenchon (C1) / Mélenchon (C2) / Mélenchon (C3) / Mélenchon (C4) / Mélenchon (C5) / Mélenchon (C6) 15,0–16,0 %</td><td class="fig">Glucksmann (C1) / Glucksmann (C2) / Glucksmann (C3) / Glucksmann (C4) / Glucksmann (C5) / Glucksmann (C6) 15,0–16,5 %</td><td class="fig">Retailleau (C1) / Retailleau (C2) / Retailleau (C3) / Retailleau (C4) / Retailleau (C5) / Retailleau (C6) 6,5–9,5 %</td><td class="fig">Lisnard (C3) / Lisnard (C4) 5,5–6,5 %</td><td class="fig">Arthaud (C1) / Arthaud (C2) / Arthaud (C3) / Arthaud (C4) / Arthaud (C5) / Arthaud (C6) / Dupont-Aignan (C1) / Dupont-Aignan (C2) / Dupont-Aignan (C3) / Dupont-Aignan (C4) / Dupont-Aignan (C5) / Dupont-Aignan (C6) / Polony (C6) / Roussel (C1) / Roussel (C2) / Roussel (C3) / Roussel (C4) / Roussel (C5) / Roussel (C6) / Ruffin (C4) / Tondelier (C1) / Tondelier (C2) / Tondelier (C3) / Tondelier (C5) / Tondelier (C6) / Villepin (C1) / Villepin (C2) / Zemmour (C1) / Zemmour (C2) / Zemmour (C3) / Zemmour (C4) / Zemmour (C5) / Zemmour (C6) 0,5–3,5 %</td>
       </tr>
       <tr class="log-row">
         <td>15 octobre 2026</td>
         <td class="fig">OpinionWay — CNews</td>
-        <td class="fig">Le Pen (H) 35,0 %</td><td class="fig">Philippe (H) 12,0 %</td><td class="fig">Mélenchon (H) 15,0 %</td><td class="fig">Glucksmann (H) 13,0 %</td><td class="fig">Retailleau (H) 6,0 %</td><td class="fig">Arthaud (H) / Bouamrane (H) / Dupont-Aignan (H) / Lisnard (H) / Roussel (H) / Tondelier (H) / Zemmour (H) 0,5–5,0 %</td>
+        <td class="fig">Le Pen (H) 35,0 %</td><td class="fig">Philippe (H) 12,0 %</td><td class="fig">Mélenchon (H) 15,0 %</td><td class="fig">Glucksmann (H) 13,0 %</td><td class="fig">Retailleau (H) 6,0 %</td><td class="fig">Lisnard (H) 4,0 %</td><td class="fig">Arthaud (H) / Bouamrane (H) / Dupont-Aignan (H) / Roussel (H) / Tondelier (H) / Zemmour (H) 0,5–5,0 %</td>
       </tr>
       <tr class="log-row">
         <td>15 octobre 2026</td>
         <td class="fig">Odoxa-Backbone — Public Sénat / presse régionale / Le Nouvel Obs</td>
-        <td class="fig">Le Pen (H1) / Le Pen (H2) 37,0–38,0 %</td><td class="fig">Attal (H2) / Philippe (H1) 11,0–17,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) 18,0–18,5 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) 9,5–10,5 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) 6,5–9,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Roussel (H1) / Roussel (H2) / Tondelier (H1) / Tondelier (H2) / Zemmour (H1) / Zemmour (H2) 0,5–4,5 %</td>
+        <td class="fig">Le Pen (H1) / Le Pen (H2) 37,0–38,0 %</td><td class="fig">Attal (H2) / Philippe (H1) 11,0–17,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) 18,0–18,5 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) 9,5–10,5 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) 6,5–9,0 %</td><td class="fig">—</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Roussel (H1) / Roussel (H2) / Tondelier (H1) / Tondelier (H2) / Zemmour (H1) / Zemmour (H2) 0,5–4,5 %</td>
       </tr>
       <tr class="log-row">
         <td>12 octobre 2026</td>
         <td class="fig">Toluna — M6 / RTL</td>
-        <td class="fig">Le Pen (A) / Le Pen (B) / Le Pen (C) / Le Pen (D) / Le Pen (E) 35,0–37,0 %</td><td class="fig">Attal (C) / Attal (E) / Philippe (A) / Philippe (B) / Philippe (D) 12,0–17,0 %</td><td class="fig">Mélenchon (A) / Mélenchon (B) / Mélenchon (C) / Mélenchon (D) / Mélenchon (E) 18,0–19,0 %</td><td class="fig">Glucksmann (A) / Glucksmann (B) / Glucksmann (C) 10,0–11,0 %</td><td class="fig">Retailleau (A) / Retailleau (B) / Retailleau (C) / Retailleau (D) / Retailleau (E) 7,0–10,0 %</td><td class="fig">Arthaud (A) / Arthaud (B) / Arthaud (C) / Arthaud (D) / Arthaud (E) / Dupont-Aignan (A) / Dupont-Aignan (B) / Dupont-Aignan (C) / Dupont-Aignan (D) / Dupont-Aignan (E) / Hollande (D) / Hollande (E) / Roussel (A) / Roussel (B) / Roussel (C) / Roussel (D) / Roussel (E) / Tondelier (A) / Tondelier (B) / Tondelier (C) / Tondelier (D) / Tondelier (E) / Zemmour (A) / Zemmour (B) / Zemmour (C) / Zemmour (D) / Zemmour (E) 1,0–7,0 %</td>
+        <td class="fig">Le Pen (A) / Le Pen (B) / Le Pen (C) / Le Pen (D) / Le Pen (E) 35,0–37,0 %</td><td class="fig">Attal (C) / Attal (E) / Philippe (A) / Philippe (B) / Philippe (D) 12,0–17,0 %</td><td class="fig">Mélenchon (A) / Mélenchon (B) / Mélenchon (C) / Mélenchon (D) / Mélenchon (E) 18,0–19,0 %</td><td class="fig">Glucksmann (A) / Glucksmann (B) / Glucksmann (C) 10,0–11,0 %</td><td class="fig">Retailleau (A) / Retailleau (B) / Retailleau (C) / Retailleau (D) / Retailleau (E) 7,0–10,0 %</td><td class="fig">—</td><td class="fig">Arthaud (A) / Arthaud (B) / Arthaud (C) / Arthaud (D) / Arthaud (E) / Dupont-Aignan (A) / Dupont-Aignan (B) / Dupont-Aignan (C) / Dupont-Aignan (D) / Dupont-Aignan (E) / Hollande (D) / Hollande (E) / Roussel (A) / Roussel (B) / Roussel (C) / Roussel (D) / Roussel (E) / Tondelier (A) / Tondelier (B) / Tondelier (C) / Tondelier (D) / Tondelier (E) / Zemmour (A) / Zemmour (B) / Zemmour (C) / Zemmour (D) / Zemmour (E) 1,0–7,0 %</td>
       </tr>
       <tr class="log-row">
         <td>30 septembre 2026</td>
         <td class="fig">IFOP — LCI / Le Figaro / Sud Radio</td>
-        <td class="fig">Le Pen (S1) / Le Pen (S10) / Le Pen (S2) / Le Pen (S3) / Le Pen (S4) / Le Pen (S5) / Le Pen (S6) / Le Pen (S7) / Le Pen (S8) / Le Pen (S9) 31,0–36,0 %</td><td class="fig">Attal (S3) / Attal (S5) / Philippe (S1) / Philippe (S10) / Philippe (S2) / Philippe (S4) / Philippe (S6) / Philippe (S7) / Philippe (S8) / Philippe (S9) 15,0–24,0 %</td><td class="fig">Mélenchon (S1) / Mélenchon (S10) / Mélenchon (S2) / Mélenchon (S3) / Mélenchon (S4) / Mélenchon (S5) / Mélenchon (S6) / Mélenchon (S7) / Mélenchon (S8) / Mélenchon (S9) 14,0–17,0 %</td><td class="fig">Glucksmann (S1) / Glucksmann (S2) / Glucksmann (S3) / Glucksmann (S6) 9,0–13,0 %</td><td class="fig">Retailleau (S1) / Retailleau (S10) / Retailleau (S2) / Retailleau (S3) / Retailleau (S4) / Retailleau (S5) / Retailleau (S6) / Retailleau (S7) / Retailleau (S8) / Retailleau (S9) 5,0–11,0 %</td><td class="fig">Arthaud (S1) / Arthaud (S10) / Arthaud (S2) / Arthaud (S3) / Arthaud (S4) / Arthaud (S5) / Arthaud (S6) / Arthaud (S7) / Arthaud (S8) / Arthaud (S9) / Dupont-Aignan (S1) / Dupont-Aignan (S10) / Dupont-Aignan (S2) / Dupont-Aignan (S3) / Dupont-Aignan (S4) / Dupont-Aignan (S5) / Dupont-Aignan (S6) / Dupont-Aignan (S7) / Dupont-Aignan (S8) / Dupont-Aignan (S9) / Faure (S4) / Faure (S5) / Guedj (S8) / Hollande (S10) / Lisnard (S6) / Maurel (S9) / Roussel (S1) / Roussel (S10) / Roussel (S2) / Roussel (S3) / Roussel (S4) / Roussel (S5) / Roussel (S6) / Roussel (S7) / Roussel (S8) / Roussel (S9) / Royal (S7) / Ruffin (S6) / Tondelier (S1) / Tondelier (S10) / Tondelier (S2) / Tondelier (S3) / Tondelier (S4) / Tondelier (S5) / Tondelier (S6) / Tondelier (S7) / Tondelier (S8) / Tondelier (S9) / Villepin (S6) / Zemmour (S1) / Zemmour (S10) / Zemmour (S2) / Zemmour (S3) / Zemmour (S4) / Zemmour (S5) / Zemmour (S6) / Zemmour (S7) / Zemmour (S8) / Zemmour (S9) 0,5–8,0 %</td>
+        <td class="fig">Le Pen (S1) / Le Pen (S10) / Le Pen (S2) / Le Pen (S3) / Le Pen (S4) / Le Pen (S5) / Le Pen (S6) / Le Pen (S7) / Le Pen (S8) / Le Pen (S9) 31,0–36,0 %</td><td class="fig">Attal (S3) / Attal (S5) / Philippe (S1) / Philippe (S10) / Philippe (S2) / Philippe (S4) / Philippe (S6) / Philippe (S7) / Philippe (S8) / Philippe (S9) 15,0–24,0 %</td><td class="fig">Mélenchon (S1) / Mélenchon (S10) / Mélenchon (S2) / Mélenchon (S3) / Mélenchon (S4) / Mélenchon (S5) / Mélenchon (S6) / Mélenchon (S7) / Mélenchon (S8) / Mélenchon (S9) 14,0–17,0 %</td><td class="fig">Glucksmann (S1) / Glucksmann (S2) / Glucksmann (S3) / Glucksmann (S6) 9,0–13,0 %</td><td class="fig">Retailleau (S1) / Retailleau (S10) / Retailleau (S2) / Retailleau (S3) / Retailleau (S4) / Retailleau (S5) / Retailleau (S6) / Retailleau (S7) / Retailleau (S8) / Retailleau (S9) 5,0–11,0 %</td><td class="fig">Lisnard (S6) 3,5 %</td><td class="fig">Arthaud (S1) / Arthaud (S10) / Arthaud (S2) / Arthaud (S3) / Arthaud (S4) / Arthaud (S5) / Arthaud (S6) / Arthaud (S7) / Arthaud (S8) / Arthaud (S9) / Dupont-Aignan (S1) / Dupont-Aignan (S10) / Dupont-Aignan (S2) / Dupont-Aignan (S3) / Dupont-Aignan (S4) / Dupont-Aignan (S5) / Dupont-Aignan (S6) / Dupont-Aignan (S7) / Dupont-Aignan (S8) / Dupont-Aignan (S9) / Faure (S4) / Faure (S5) / Guedj (S8) / Hollande (S10) / Maurel (S9) / Roussel (S1) / Roussel (S10) / Roussel (S2) / Roussel (S3) / Roussel (S4) / Roussel (S5) / Roussel (S6) / Roussel (S7) / Roussel (S8) / Roussel (S9) / Royal (S7) / Ruffin (S6) / Tondelier (S1) / Tondelier (S10) / Tondelier (S2) / Tondelier (S3) / Tondelier (S4) / Tondelier (S5) / Tondelier (S6) / Tondelier (S7) / Tondelier (S8) / Tondelier (S9) / Villepin (S6) / Zemmour (S1) / Zemmour (S10) / Zemmour (S2) / Zemmour (S3) / Zemmour (S4) / Zemmour (S5) / Zemmour (S6) / Zemmour (S7) / Zemmour (S8) / Zemmour (S9) 0,5–8,0 %</td>
       </tr>
       <tr class="log-row">
         <td>28 septembre 2026</td>
         <td class="fig">Toluna — M6 / RTL</td>
-        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) / Le Pen (H4) / Le Pen (H5) 35,0–36,0 %</td><td class="fig">Attal (H3) / Attal (H5) / Philippe (H1) / Philippe (H2) / Philippe (H4) 12,0–16,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) / Mélenchon (H4) / Mélenchon (H5) 17,0–18,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) 10,0–11,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) / Retailleau (H4) / Retailleau (H5) 7,0–10,0 %</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Arthaud (H4) / Arthaud (H5) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Dupont-Aignan (H4) / Dupont-Aignan (H5) / Hollande (H4) / Hollande (H5) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Roussel (H4) / Roussel (H5) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Tondelier (H4) / Tondelier (H5) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) / Zemmour (H4) / Zemmour (H5) 1,0–8,0 %</td>
+        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) / Le Pen (H4) / Le Pen (H5) 35,0–36,0 %</td><td class="fig">Attal (H3) / Attal (H5) / Philippe (H1) / Philippe (H2) / Philippe (H4) 12,0–16,0 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) / Mélenchon (H4) / Mélenchon (H5) 17,0–18,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) / Glucksmann (H3) 10,0–11,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) / Retailleau (H4) / Retailleau (H5) 7,0–10,0 %</td><td class="fig">—</td><td class="fig">Arthaud (H1) / Arthaud (H2) / Arthaud (H3) / Arthaud (H4) / Arthaud (H5) / Dupont-Aignan (H1) / Dupont-Aignan (H2) / Dupont-Aignan (H3) / Dupont-Aignan (H4) / Dupont-Aignan (H5) / Hollande (H4) / Hollande (H5) / Roussel (H1) / Roussel (H2) / Roussel (H3) / Roussel (H4) / Roussel (H5) / Tondelier (H1) / Tondelier (H2) / Tondelier (H3) / Tondelier (H4) / Tondelier (H5) / Zemmour (H1) / Zemmour (H2) / Zemmour (H3) / Zemmour (H4) / Zemmour (H5) 1,0–8,0 %</td>
       </tr>
       <tr class="log-row">
         <td>24 septembre 2026</td>
         <td class="fig">Cluster17 — Politico</td>
-        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) 30,0–31,0 %</td><td class="fig">Attal (H2) / Philippe (H1) / Philippe (H3) 13,5–19,5 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) 19,0–20,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) 12,0–14,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) 7,5–9,5 %</td><td class="fig">Dupont-Aignan / Hollande (H3) / Roussel / Tondelier / Zemmour 2,0–7,5 %</td>
+        <td class="fig">Le Pen (H1) / Le Pen (H2) / Le Pen (H3) 30,0–31,0 %</td><td class="fig">Attal (H2) / Philippe (H1) / Philippe (H3) 13,5–19,5 %</td><td class="fig">Mélenchon (H1) / Mélenchon (H2) / Mélenchon (H3) 19,0–20,0 %</td><td class="fig">Glucksmann (H1) / Glucksmann (H2) 12,0–14,0 %</td><td class="fig">Retailleau (H1) / Retailleau (H2) / Retailleau (H3) 7,5–9,5 %</td><td class="fig">Lisnard (H3) 5,0 %</td><td class="fig">Dupont-Aignan / Hollande (H3) / Roussel / Tondelier / Zemmour 2,0–7,5 %</td>
       </tr>
       <tr class="log-row">
         <td>14 septembre 2026</td>
         <td class="fig">Toluna — M6 / RTL</td>
-        <td class="fig">Le Pen 33,0–36,0 %</td><td class="fig">Attal / Philippe 8,0–19,0 %</td><td class="fig">Mélenchon 16,0–17,0 %</td><td class="fig">Glucksmann 10,0–12,0 %</td><td class="fig">Retailleau 7,0–10,0 %</td><td class="fig">Dupont-Aignan / Hollande / Roussel / Tondelier / Zemmour 2,0–7,0 %</td>
+        <td class="fig">Le Pen 33,0–36,0 %</td><td class="fig">Attal / Philippe 8,0–19,0 %</td><td class="fig">Mélenchon 16,0–17,0 %</td><td class="fig">Glucksmann 10,0–12,0 %</td><td class="fig">Retailleau 7,0–10,0 %</td><td class="fig">—</td><td class="fig">Dupont-Aignan / Hollande / Roussel / Tondelier / Zemmour 2,0–7,0 %</td>
       </tr>
       <tr class="log-row">
         <td>13 septembre 2026</td>
         <td class="fig">Ipsos — Le Monde (Enquête Électorale Française : Ipsos-BVA/CESI, CEVIPOF, Fondation Jean Jaurès, Institut Montaigne)</td>
-        <td class="fig">Le Pen 33,0–35,0 %</td><td class="fig">Attal / Philippe 6,0–21,0 %</td><td class="fig">Mélenchon 15,5–17,0 %</td><td class="fig">Glucksmann 11,5–13,5 %</td><td class="fig">Retailleau 7,0–10,5 %</td><td class="fig">—</td>
+        <td class="fig">Le Pen 33,0–35,0 %</td><td class="fig">Attal / Philippe 6,0–21,0 %</td><td class="fig">Mélenchon 15,5–17,0 %</td><td class="fig">Glucksmann 11,5–13,5 %</td><td class="fig">Retailleau 7,0–10,5 %</td><td class="fig">—</td><td class="fig">—</td>
       </tr>
       <tr class="log-row">
         <td>6 septembre 2026</td>
         <td class="fig">OpinionWay — CNews</td>
-        <td class="fig">Le Pen (scénario Attal seul) / Le Pen (scénario Attal+Philippe) / Le Pen (scénario Philippe seul) 33,0–35,0 %</td><td class="fig">Attal (scénario Attal seul) / Philippe (scénario Attal+Philippe) / Philippe (scénario Philippe seul) 13,0–20,0 %</td><td class="fig">Mélenchon (scénario Attal seul) / Mélenchon (scénario Attal+Philippe) / Mélenchon (scénario Philippe seul) 16,0–17,0 %</td><td class="fig">Glucksmann (scénario Attal seul) 13,0 %</td><td class="fig">Retailleau (scénario Attal seul) / Retailleau (scénario Attal+Philippe) 7,0–11,0 %</td><td class="fig">—</td>
+        <td class="fig">Le Pen (scénario Attal seul) / Le Pen (scénario Attal+Philippe) / Le Pen (scénario Philippe seul) 33,0–35,0 %</td><td class="fig">Attal (scénario Attal seul) / Philippe (scénario Attal+Philippe) / Philippe (scénario Philippe seul) 13,0–20,0 %</td><td class="fig">Mélenchon (scénario Attal seul) / Mélenchon (scénario Attal+Philippe) / Mélenchon (scénario Philippe seul) 16,0–17,0 %</td><td class="fig">Glucksmann (scénario Attal seul) 13,0 %</td><td class="fig">Retailleau (scénario Attal seul) / Retailleau (scénario Attal+Philippe) 7,0–11,0 %</td><td class="fig">—</td><td class="fig">—</td>
       </tr>
       <tr class="log-row">
         <td>5 septembre 2026</td>
         <td class="fig">Ipsos — Le Parisien</td>
-        <td class="fig">Le Pen 34,0–36,0 %</td><td class="fig">Attal / Philippe 7,5–16,5 %</td><td class="fig">Mélenchon 15,0–17,0 %</td><td class="fig">Glucksmann 11,5–14,0 %</td><td class="fig">Retailleau 6,0–10,0 %</td><td class="fig">Faure 4,5–5,5 %</td>
+        <td class="fig">Le Pen 34,0–36,0 %</td><td class="fig">Attal / Philippe 7,5–16,5 %</td><td class="fig">Mélenchon 15,0–17,0 %</td><td class="fig">Glucksmann 11,5–14,0 %</td><td class="fig">Retailleau 6,0–10,0 %</td><td class="fig">—</td><td class="fig">Faure 4,5–5,5 %</td>
       </tr>
       <tr class="log-row">
         <td>5 septembre 2026</td>
         <td class="fig">Cluster17 — Le Point</td>
-        <td class="fig">Le Pen (scénario 1) / Le Pen (scénario 2) / Le Pen (scénario 3) 29,0–31,5 %</td><td class="fig">Attal (scénario 2) / Philippe (scénario 1) / Philippe (scénario 3) 13,5–18,0 %</td><td class="fig">Mélenchon (scénario 1) / Mélenchon (scénario 2) / Mélenchon (scénario 3) 17,0–18,0 %</td><td class="fig">Glucksmann (scénario 1) / Glucksmann (scénario 2) / Glucksmann (scénario 3) 11,0–11,5 %</td><td class="fig">Retailleau (scénario 1) / Retailleau (scénario 2) / Retailleau (scénario 3) 6,5–9,0 %</td><td class="fig">—</td>
+        <td class="fig">Le Pen (scénario 1) / Le Pen (scénario 2) / Le Pen (scénario 3) 29,0–31,5 %</td><td class="fig">Attal (scénario 2) / Philippe (scénario 1) / Philippe (scénario 3) 13,5–18,0 %</td><td class="fig">Mélenchon (scénario 1) / Mélenchon (scénario 2) / Mélenchon (scénario 3) 17,0–18,0 %</td><td class="fig">Glucksmann (scénario 1) / Glucksmann (scénario 2) / Glucksmann (scénario 3) 11,0–11,5 %</td><td class="fig">Retailleau (scénario 1) / Retailleau (scénario 2) / Retailleau (scénario 3) 6,5–9,0 %</td><td class="fig">Lisnard (scénario 3) 4,0 %</td><td class="fig">—</td>
       </tr>
       <tr class="log-row">
         <td>29 août 2026</td>
         <td class="fig">Elabe (agrégat EPOC Info) <span class="tag">agrégat, exclu du filtre</span></td>
-        <td class="fig">Bardella / Le Pen 34,0–35,0 %</td><td class="fig">Attal / Philippe 13,5–18,2 %</td><td class="fig">Mélenchon 13,8 %</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td>
+        <td class="fig">Bardella / Le Pen 34,0–35,0 %</td><td class="fig">Attal / Philippe 13,5–18,2 %</td><td class="fig">Mélenchon 13,8 %</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td>
       </tr>
       <tr class="log-row">
         <td>24 août 2026</td>
         <td class="fig">Toluna — M6 / RTL</td>
-        <td class="fig">Le Pen 35,0–38,0 %</td><td class="fig">Attal / Philippe 8,0–19,0 %</td><td class="fig">Mélenchon 16,0–17,0 %</td><td class="fig">Glucksmann 10,0–11,0 %</td><td class="fig">Retailleau 6,0–9,0 %</td><td class="fig">Dupont-Aignan / Hollande / Roussel / Tondelier / Zemmour 2,0–8,0 %</td>
+        <td class="fig">Le Pen 35,0–38,0 %</td><td class="fig">Attal / Philippe 8,0–19,0 %</td><td class="fig">Mélenchon 16,0–17,0 %</td><td class="fig">Glucksmann 10,0–11,0 %</td><td class="fig">Retailleau 6,0–9,0 %</td><td class="fig">—</td><td class="fig">Dupont-Aignan / Hollande / Roussel / Tondelier / Zemmour 2,0–8,0 %</td>
       </tr>
       <tr class="log-row">
         <td>15 juin 2026</td>
         <td class="fig">OpinionWay — Le JDD</td>
-        <td class="fig">RN (Le Pen ou Bardella, hypothèse non détaillée) 33,0–35,0 %</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td>
+        <td class="fig">RN (Le Pen ou Bardella, hypothèse non détaillée) 33,0–35,0 %</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td>
       </tr>
       <tr class="log-row">
         <td>1 juin 2026</td>
         <td class="fig">Ipsos — Le Parisien</td>
-        <td class="fig">Bardella / Le Pen 31,0–36,0 %</td><td class="fig">Attal / Philippe 8,5–19,0 %</td><td class="fig">Mélenchon 13,0–13,5 %</td><td class="fig">Glucksmann 11,0–14,0 %</td><td class="fig">Retailleau 7,5–10,0 %</td><td class="fig">Hollande / Tondelier 4,5–8,0 %</td>
+        <td class="fig">Bardella / Le Pen 31,0–36,0 %</td><td class="fig">Attal / Philippe 8,5–19,0 %</td><td class="fig">Mélenchon 13,0–13,5 %</td><td class="fig">Glucksmann 11,0–14,0 %</td><td class="fig">Retailleau 7,5–10,0 %</td><td class="fig">—</td><td class="fig">Hollande / Tondelier 4,5–8,0 %</td>
       </tr>
       <tr class="log-row">
         <td>26 mai 2026</td>
         <td class="fig">Odoxa-Mascaret — Public Sénat</td>
-        <td class="fig">Bardella 32,0 %</td><td class="fig">Philippe 17,0 %</td><td class="fig">Mélenchon 16,0 %</td><td class="fig">Glucksmann 11,0 %</td><td class="fig">—</td><td class="fig">—</td>
+        <td class="fig">Bardella 32,0 %</td><td class="fig">Philippe 17,0 %</td><td class="fig">Mélenchon 16,0 %</td><td class="fig">Glucksmann 11,0 %</td><td class="fig">—</td><td class="fig">—</td><td class="fig">—</td>
       </tr></tbody>
       </table>
     </div>
@@ -1141,7 +1240,7 @@
     <h2>Ce que ce modèle dit vraiment — et ses limites</h2>
     <div class="read-list">
       <div class="read-item"><div class="read-num">1</div>
-        <p><b>Le lissage n'est pas de la prévision.</b> Avec 22 à 27 sondages bruts par bloc sur trois mois, le filtre se comporte surtout comme une moyenne pondérée par la fiabilité de chaque sondage — utile pour ne pas sur-réagir à un point isolé, pas pour anticiper avril 2027.</p>
+        <p><b>Le lissage n'est pas de la prévision.</b> Avec 16 à 27 sondages bruts par bloc sur trois mois, le filtre se comporte surtout comme une moyenne pondérée par la fiabilité de chaque sondage — utile pour ne pas sur-réagir à un point isolé, pas pour anticiper avril 2027.</p>
       </div>
       <div class="read-item"><div class="read-num">2</div>
         <p><b>Le bruit de process (Q) n'est pas ajusté de façon fiable.</b> Avec moins de 8 sondages par bloc, l'estimation de Q par maximum de vraisemblance est instable : le pipeline retombe alors sur une valeur par défaut documentée (0.07 pts²/jour) plutôt que sur un chiffre ajusté aux données — regarde la note "Q=" sous chaque graphique.</p>
@@ -1153,7 +1252,7 @@
         <p><b>La bande de projection grandit mécaniquement avec le temps.</b> Si aucun sondage n'est ajouté pendant plusieurs mois, l'intervalle "aujourd'hui" continuera de s'élargir — c'est le modèle qui dit honnêtement qu'il ne sait plus, pas un bug.</p>
       </div>
       <div class="read-item"><div class="read-num">5</div>
-        <p><b>La somme des 6 blocs (83,2 % actuellement) ne fait volontairement pas 100 %.</b> Chaque bloc est lissé par son propre filtre de Kalman, sans aucune contrainte qui forcerait le total à 100 % à un instant donné. Trois raisons structurelles à ça : les sondages ne testent pas tous les mêmes candidats, et un bloc dans un même sondage est déjà une moyenne de plusieurs hypothèses (pas un score unique) ; les blocs n'ont pas tous la même date de dernière mesure, donc "aujourd'hui" n'est pas comparé à la même base temporelle partout ; et aucune catégorie "indécis / sans opinion" n'est suivie ici, alors que les sondages à ce stade de la campagne en comptent typiquement 10 à 20 %. Renormaliser pour forcer un total à 100 % serait trompeur — ça ferait comme si ces 6 blocs couvraient tout l'électorat, ce que rien ne démontre. Mieux vaut afficher le vrai total, même imparfait.</p>
+        <p><b>La somme des 7 blocs (92,0 % actuellement) ne fait volontairement pas 100 %.</b> Chaque bloc est lissé par son propre filtre de Kalman, sans aucune contrainte qui forcerait le total à 100 % à un instant donné. Trois raisons structurelles à ça : les sondages ne testent pas tous les mêmes candidats, et un bloc dans un même sondage est déjà une moyenne de plusieurs hypothèses (pas un score unique) ; les blocs n'ont pas tous la même date de dernière mesure, donc "aujourd'hui" n'est pas comparé à la même base temporelle partout ; et aucune catégorie "indécis / sans opinion" n'est suivie ici, alors que les sondages à ce stade de la campagne en comptent typiquement 10 à 20 %. Renormaliser pour forcer un total à 100 % serait trompeur — ça ferait comme si ces 7 blocs couvraient tout l'électorat, ce que rien ne démontre. Mieux vaut afficher le vrai total, même imparfait.</p>
       </div>
     </div>
   </section>
@@ -1176,14 +1275,14 @@
 <li><a href="https://www.ifopgroup.com/wp-content/uploads/2026/10/122802-resultats-densemble-1.pdf">IFOP</a></li>
 <li><a href="https://www.odoxa.fr/wp-content/uploads/2026/10/Odoxa-Backbone-pour-la-Presse-Regionale-Public-Senat-et-le-Nouvel-Obs-IV-a-lelection-presidentielle-de-2027.pdf">Odoxa-Backbone</a></li>
 <li><a href="https://tolunacorporate.com/wp-content/uploads/2026/10/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-7-M6-RTL-12-octobre-2026.pdf">Toluna</a></li>
-<li><a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10319-pres-iv-opinionway-cnews-15-octobre.pdf">OpinionWay</a></li>
 <li><a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10323-pres-iv-yougov-le-huffpost-18-octobre.pdf">YouGov</a></li>
+<li><a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10319-pres-iv-opinionway-cnews-15-octobre.pdf">OpinionWay</a></li>
 <li><a href="https://elabe.fr/fichier-pdf/13329-les-francais-et-lelection-presidentielle-2027/">Elabe</a></li>
 <li><a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10327-pres-barometre-election-v7-ifop-20-octobre.pdf">IFOP</a></li>
 <li><a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10339-pres-iv-cluster17-politico-26-octobre.pdf">Cluster17</a></li>
 <li><a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10332-pres-iv-toluna-harris-interactive-23-octobre.pdf">Toluna</a></li>
-<li><a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10338-pres-iv-ipsos-bva-le-parisien-24-octobre.pdf">Ipsos</a></li>
 <li><a href="https://www.opinion-way.com/wp-content/uploads/2026/10/OpinionWay-pour-CNEWS-Les-intentions-de-vote-a-lelection-presidentielle-2027-22-octobre-2026-1.pdf">OpinionWay</a></li>
+<li><a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/octobre/10338-pres-iv-ipsos-bva-le-parisien-24-octobre.pdf">Ipsos</a></li>
 <li><a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10352-pres-iv-ifop-lci-3-novembre.pdf">IFOP</a></li>
 <li><a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10362-pres-iv-toluna-harris-interactive-9-novembre.pdf">Toluna</a></li>
 <li><a href="https://www.opinion-way.com/wp-content/uploads/2026/11/OpinionWay-pour-Les-Echos-et-Radio-Classique-Barometre-Presitrack-2027-Vague-4-Novembre-2026.pdf">OpinionWay</a></li>

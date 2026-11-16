@@ -19,7 +19,7 @@ values (
 );
 
 -- Une ligne par (bloc, figure testée). Répéter pour chaque bloc concerné —
--- voir `blocs` pour les id valides : rn, centre, lfi, gauche, droite, autres.
+-- voir `blocs` pour les id valides : rn, centre, lfi, gauche, droite (Retailleau seul), lisnard, autres.
 insert into poll_results (poll_id, bloc_id, candidate_label, low_pct, high_pct, point_pct)
 select id, 'rn', 'NomCandidat', 33.0, 33.0, 33.0
 from polls where source_url = 'https://...';  -- même URL que ci-dessus

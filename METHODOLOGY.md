@@ -41,6 +41,16 @@ l'électorat RN se reporterait globalement de façon comparable sur Le Pen ou
 Bardella, ce qui est plausible mais pas démontré par les données dont on
 dispose ici.
 
+**Exception : le bloc « Lisnard » (depuis le 16 novembre 2026).** David
+Lisnard est passé de 3-4 % à 10-12 % entre fin septembre et mi-novembre et
+dépasse Retailleau dans la plupart des scénarios. Rangé dans « Autres »
+(moyenne de petits candidats), ce mouvement était invisible ; additionné à
+Retailleau, il aurait créé des sauts artificiels entre scénarios avec et
+sans lui. Il est donc suivi dans sa propre série, et le bloc « droite »
+devient « LR (Retailleau) ». C'est une série par candidat, qui ne couvre que
+les scénarios où il est testé : quand il ne l'est pas, ses électeurs se
+répartissent ailleurs. Détail dans `db/insert_20261116_bloc_lisnard.sql`.
+
 ## 3. Le modèle statistique
 
 ### 3.1 État et observation
